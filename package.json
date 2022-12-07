@@ -1,0 +1,22 @@
+{
+  "name": "instahyre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "API/index.js",
+  "type": "module",
+  "proxy":"http://localhost:8000",
+  "scripts": {
+    "start":"node API/index.js",
+    "server":"nodemon API/index.js",
+    "client":"npm start --prefix client",
+    "dev":"concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20"
+  }
+}
